@@ -13,8 +13,4 @@ INPUT .\main.aux
 INPUT .\main.aux
 INPUT main.aux
 OUTPUT main.aux
-OUTPUT main.pdf
-INPUT C:\Users\moham\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT main.aux
-INPUT C:\Users\moham\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\moham\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
