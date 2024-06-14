@@ -1,5 +1,110 @@
-\documentclass{article}
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{tikz}
+\definecolor{lightblue}{HTML}{8FAADC}
+\definecolor{bluetext}{HTML}{2F5496}
+\usepackage{textpos}
+
+\newcommand{\textBF}[1]{%
+    \pdfliteral direct {2 Tr 0.5 w} %the second factor is the boldness
+     #1%
+    \pdfliteral direct {0 Tr 0 w}%
+}
+
+
+% Set the page size and margins
+\geometry{a4paper, left=1in, right=1in, top=1in, bottom=1in}
 
 \begin{document}
+\thispagestyle{empty}
+
+% Blue-colored left quarter
+
+
+\begin{textblock}{4.6}(-2,-1.7)
+    \vspace{60mm}
+	\textblockcolour{lightblue}
+% 	\includegraphics [scale=1]{media/bande_UL.png}
+    \includegraphics [width=52mm]{FSTM logo.png}
+	\vspace{300mm}
+\end{textblock}
+
+\begin{textblock}{4.6}(-2,8.5)
+	\textblockcolour{lightblue}
+% 	\includegraphics [scale=1]{media/bande_UL.png}
+    \includegraphics[width=52mm]{Logo ILISI.png}
+	\vspace{300mm}
+\end{textblock}
+
+\begin{textblock}{10}(5.0,0)
+	\textblockcolour{white}
+    \begin{Huge}
+        \color{bluetext}
+        \textBF{\hspace*{1.6cm}        \underline{Atelier \texttt{BD}}}
+        \\
+        \textBF{\underline{et programmation web}}
+    \end{Huge}
+\end{textblock}
+
+
+\begin{textblock}{10}(3,1.7)
+    \textblockcolour{white}
+    \begin{center}
+    \begin{Huge}
+        \textbf{\underline{Rapport} : Projet d’intégration, \\ Plateforme de collaboration intra-entreprise}
+    \end{Huge}
+    \end{center}
+\end{textblock}
+
+\begin{textblock}{10}(3.1,5)
+    \textblockcolour{white}
+    \begin{center}
+    \begin{Huge}
+        \color{bluetext}
+        \textBF{\underline{Filière \underline{d'ingénieur}:}} \\
+        \vspace{5mm} 
+        \textBF{\textcolor{black}{I}ngénierie \textcolor{black}{L}ogicielle et \textcolor{black}{I}ntégration des\\\textcolor{black}{S}ystèmes \textcolor{black}{I}nformatiques}
+    \end{Huge}
+    \end{center}
+\end{textblock}
+
+\begin{textblock}{10}(2.7,8.5)
+    \textblockcolour{white}
+    \begin{Huge}
+        \textBF{\textcolor{bluetext}{\underline{Encadré par }:}}
+        
+        \vspace{0.7cm}
+        {\Large{- Pr. K. Letrache \\  }}
+        \\
+        {\Large{\hspace*{0.55cm}- Pr. M. Kissi}}
+    \end{Huge}
+\end{textblock}
+
+\begin{textblock}{10}(2.7,10.5)
+    \textblockcolour{white}
+    \begin{Huge}
+        \textBF{\textcolor{bluetext}{\underline{Réalisé par }:}}
+        
+        \vspace{0.7cm}
+        \Large{- CHROQUI Hamza}
+
+        \vspace{0.4cm}
+        \Large{- HERAK Mohammad}
+
+        \vspace{0.7cm}
+        \Large{- AMKASSOU Ayman Abdellah}
+    \end{Huge}
+\end{textblock}
+
+\begin{textblock}{10}(6.5,14)
+    \textblockcolour{white}
+    \begin{Large}
+        \emph{\textcolor{gray}{Année universitaire : 2023-2024 }}
+    \end{Large}
+\end{textblock}
+
+
 
 \end{document}
